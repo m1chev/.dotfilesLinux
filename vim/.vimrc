@@ -4,6 +4,7 @@ syntax on
 filetype plugin indent on
 set noswapfile
 set nofixeol
+set spell
 " set clipboard=unnamedplus
 
 let mapleader = " "
