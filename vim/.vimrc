@@ -4,7 +4,6 @@ syntax on
 filetype plugin indent on
 set noswapfile
 set nofixeol
-set spell
 " set clipboard=unnamedplus
 
 let mapleader = " "
@@ -107,6 +106,7 @@ noremap <leader>/ :Commentary<cr>
 nnoremap tn :tabnew<CR>
 
 " Remap keys for applying codeAction to the current buffer.
+vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>ac  <Plug>(coc-codeaction)
 "_____________________
