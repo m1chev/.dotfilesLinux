@@ -15,3 +15,5 @@ alias ping='ping -c 5'
 # Useful commands
 # alias bc='bc -l' # calculator
 
+# Start jMeter
+alias jmeter='cd ~/jMeter/bin/ && ./jmeter'
