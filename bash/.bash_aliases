@@ -4,7 +4,7 @@
 alias week='date +%V'
 
 # Show hidden files
-alias ll='ls -la'
+alias ll='ls -lah'
 
 # Create parent diretories on demand
 alias mkdir='mkdir -pv'
