@@ -1,0 +1,16 @@
+    4  sudo dnf install gnome-tweak-tool
+    5  sudo dnf install -y dnf-plugins-core distribution-gpg-keys
+    7  sudo dnf install -y element --refresh
+   13  sudo dnf install git
+   29  sudo dnf install stow
+   68  sudo dnf install nodejs
+   74  sudo dnf install java-latest-openjdk-devel.x68_64
+   75  sudo dnf install java-latest-openjdk-devel.x86_64
+   78  sudo dnf install java-latest-openjdk-devel.x86_64
+   83  sudo dnf install maven
+  110  sudo dnf install tor
+  116  sudo dnf install tor
+  123  sudo dnf install torbrowser-launcher
+  136  history | grep 'sudo dnf install'
+  137  history | grep 'sudo dnf install' > note/installHistory
+  140  history | grep 'sudo dnf install' > notes/installHistory
