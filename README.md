@@ -1,2 +1,0 @@
-# .dotfilesLinux
-## Linux settings files

@@ -2,3 +2,4 @@ man stow
 
 stow --adopt -nvSt ~ *
 stow --adopt -nvDt ~ *
+stow -nvDt ~ *
