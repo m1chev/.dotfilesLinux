@@ -13,4 +13,6 @@
   123  sudo dnf install torbrowser-launcher
   136  history | grep 'sudo dnf install'
   137  history | grep 'sudo dnf install' > note/installHistory
+  137  history | grep 'sudo dnf install' > note/installHistory
+  137  history | grep 'sudo dnf install' > note/installHistory
   140  history | grep 'sudo dnf install' > notes/installHistory
