@@ -31,7 +31,7 @@ nnoremap <leader>k m`O<Esc>``
 
 set belloff=all     "no sound beeping"
 set smartindent     "identify autocomplete
-set nowrap          "dont breack long lines
+set nowrap          "don't breack long lines
 set incsearch       "see results while searching
 "let g:netrw_banner = 0
 
@@ -52,9 +52,9 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-"Run in Terminal the line below:
-"curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"run :PlugInstall
+" Run in Terminal the line below:
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" run :PlugInstall
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
@@ -71,6 +71,7 @@ Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-commentary'
+Plug 'simplenote-vim/simplenote.vim' "list of notes :SimplenoteList
 " Plug 'turbio/bracey.vim'    ":Bracey  :BraceyReload :BraceyStop:
 
 call plug#end()
@@ -81,14 +82,15 @@ nnoremap <C-f> :Files<CR>
 nnoremap <C-b> :Buffers<CR>
 inoremap <C-f> <Esc><Esc>:BLines!<CR>
 
-" autocmd vimenter * NERDTree
+"SimplenoteList" autocmd vimenter * NERDTree
 let NERDTreeWinSize = 30
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 
-let g:lightline = {
-    \ 'colorscheme': 'seoul256',
-    \ }
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vimlet g:lightline = {
+"     \ 'colorscheme': 'seoul256',
+"     \ }
+
 set laststatus=2 "lightline will work also on single window
 set noshowmode
 set background=dark
