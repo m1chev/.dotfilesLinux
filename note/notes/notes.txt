@@ -1,2 +1,12 @@
 # Disable Wayland in order to use screen sharing 
 sudo vim /etc/gdm/custom.conf 
+
+Work related:
+1. Should we update the instructions 
+    https://community.vereign.com/t/auto-seal-all-outlook-emails/261
+2.
+
+Issues to be Closed:
+1. https://code.vereign.com/seal/clients/outlook-add-in/-/issues/98
+2. https://code.vereign.com/seal/clients/outlook-add-in/-/issues/91
+

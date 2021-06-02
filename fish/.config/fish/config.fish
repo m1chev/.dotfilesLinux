@@ -12,3 +12,5 @@ alias localip='hostname -I | awk \'{print $1}\''
 # Global IP
 alias globalip='curl ipconfig.io'
 
+# Start Kali with Docker
+alias kali='sudo docker run --tty --interactive kalilinux/kali-rolling /bin/bash'
