@@ -22,7 +22,10 @@ alias jmeter='cd ~/jMeter/bin/ && ./jmeter'
 alias vpn='sudo systemd-resolve -i tun0 --set-dns=10.6.16.100 --set-dns=10.6.16.100 --set-domain=~dc1.vereign.com --set-domain=~tech.vereign.com --set-domain=~k8s.vereign.com --set-domain=~dev.vereign.com'
 
 # Local IP
-alias localip='hostname -I | awk \'{print $1}\''
+alias localip='hostname -I | awk"{print $1}"'
+
+# Nvim as Vim
+alias vim='nvim'
 
 # Global IP
 alias globalip='curl ipconfig.io'
