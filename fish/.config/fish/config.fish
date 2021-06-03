@@ -14,3 +14,6 @@ alias globalip='curl ipconfig.io'
 
 # Start Kali with Docker
 alias kali='sudo docker run --tty --interactive kalilinux/kali-rolling /bin/bash'
+
+# Vim to NeoVim
+alias vim='nvim'

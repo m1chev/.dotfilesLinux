@@ -9,4 +9,3 @@ Work related:
 Issues to be Closed:
 1. https://code.vereign.com/seal/clients/outlook-add-in/-/issues/98
 2. https://code.vereign.com/seal/clients/outlook-add-in/-/issues/91
-
