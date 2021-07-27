@@ -7,5 +7,10 @@ Work related:
 2.
 
 Issues to be Closed:
-1. https://code.vereign.com/seal/clients/outlook-add-in/-/issues/98
+1. https://code.vereign.com/seal/clients/outlook-add-in/-/issues/98 - closed
 2. https://code.vereign.com/seal/clients/outlook-add-in/-/issues/91
+
+Payments:
+1. Show Trail - the button Change should be presented - button named Upgrade.
+  https://code.vereign.com/seal/clients/user-payments/-/issues/1
+2. There are different favicons for
