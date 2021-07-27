@@ -13,7 +13,10 @@ alias localip='hostname -I | awk \'{print $1}\''
 alias globalip='curl ipconfig.io'
 
 # Start Kali with Docker
-alias kali='sudo docker run --tty --interactive kalilinux/kali-rolling /bin/bash'
+# alias kali='sudo docker run --tty --interactive kalilinux/kali-rolling /bin/bash'
+# alias kali='sudo docker run --tty --interactive kalilinux/kali-bleeding-edge/bin/bash'
+alias kali='sudo docker container start 992a5ba9a6a5 & sudo docker attach 992a5ba9a6a5'
+# alias kali='sudo docker run -it --rm 99b9a83a4c1e /bin/bash'
 
 # Vim to NeoVim
 alias vim='nvim'
