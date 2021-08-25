@@ -46,3 +46,18 @@ default_height = 30
 [[layers]]
     name = "fzf"
 
+[[layers]]
+  name = "lang#go"
+
+[[layers]]
+  name = "git"
+  git_plugin = 'fugitive'
+
+[[custom_plugins]]
+    repo = "https://gitlab.com/code-stats/code-stats-vim.git"
+    merged = false
+
+[options]
+    bootstrap_before = 'myspacevim#before'
+    bootstrap_after = 'myspacevim#after'
+
