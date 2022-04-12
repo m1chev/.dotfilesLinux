@@ -2,6 +2,10 @@
 
 ## Storage of my essential configurations needed for initial start of GNU operating systems
 
-- Vim
-- Bash
-- Notes
+  - bash
+  - git
+  - intellij
+  - note
+  - spacevim
+  - vim
+

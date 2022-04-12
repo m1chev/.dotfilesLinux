@@ -2,12 +2,12 @@
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[green]%}[%{$fg[blue]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[green]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[blue]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%19</..<%~%{$reset_color%}$%b "
 
 # History in cache directory:
 export HISTSIZE=1000
 export SAVEHIST=1000
-export HISTFILE=~/.config/zsh_history
+export HISTFILE=~/.config/.zsh_history
 setopt HIST_IGNORE_ALL_DUPS  # do not put duplicated command into history list
 setopt HIST_SAVE_NO_DUPS  # do not save duplicated command
 setopt HIST_REDUCE_BLANKS  # remove unnecessary blanks
@@ -62,6 +62,12 @@ bindkey '^N' history-beginning-search-forward
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.bash_aliases" ] && source "$HOME/.bash_aliases"
 
+# Load zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh-autosuggestions
+source ~/.config/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^f' autosuggest-accept
+
 # Load zsh-syntax-highlighting; should be last.
+# run: $apt/dnf install zsh-syntax-highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting
-source /home/michev/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2 >/dev/null
+source ~/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2 >/dev/null
