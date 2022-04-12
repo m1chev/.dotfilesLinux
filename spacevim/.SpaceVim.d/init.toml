@@ -11,26 +11,24 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "gruvbox"
+    colorscheme = "gruvbox"   # SPC T s -	select a theme using a fuzzy finder.
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
-    enable_guicolors = false
+    enable_guicolors = true
     snippet_engine = "neosnippet"
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
     statusline_separator = "slant"
     statusline_iseparator = "slant"
+    statusline_unicode = true
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
-    enable_statusline_mode = true
     nable_filetree_gitstatus = true
-
-[options]
+    enable_vimfiler_welcome = false
+    filetree_direction = "left"
     bootstrap_before = 'myspacevim#before'
     # bootstrap_after = 'myspacevim#after'
-    filetree_direction = "left"
-
 
 # Enable autocomplete layer
 [[layers]]
@@ -88,9 +86,13 @@
 [[layers]]
   name = "denite"
 
-# [[custom_plugins]]
-    # name = "vim-airline/vim-airline"
-    # merged = false
+[[custom_plugins]]
+    name = "ryanoasis/vim-devicons"
+    merged = false
+
+[[layers]]
+  name = "VersionControl"
+
 # ________________________________________________
     
 # [[custom_plugins]]
@@ -103,5 +105,3 @@
 #
 # [[layers]]
   # name = "lang#groovy"
-#
-#
