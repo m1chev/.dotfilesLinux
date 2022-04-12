@@ -1,0 +1,19 @@
+; [user]
+  ; email = veselinov.michev@gmail.com
+  ; name = m1chev
+  ; signingKey = 5D5AD2DD87A2A3D2
+[user]
+  email = georgi.michev@vereign.com
+  name = georgi.michev
+  signingKey = 5D5AD2DD87A2A3D2
+[commit]
+	gpgSign = true
+
+[url "ssh://git@code.vereign.com:"]
+  insteadOf = https://code.vereign.com
+
+[init]
+	defaultBranch = main
+[alias]
+	unstage = reset HEAD --
+	last = log -1 HEAD
