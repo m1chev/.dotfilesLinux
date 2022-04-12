@@ -1,10 +1,16 @@
+"<leader> => ,
 function! myspacevim#before() abort
+    let g:neomake_c_enabled_makers = ['clang']
+    " you can defined mappings in bootstrap function
+    " for example, use kj to exit insert mode.
+    " inoremap kj <Esc>
 
-  nmap <C-o> O<Esc>j
-  nmap <Enter> o<esc>k
+    nmap <leader>gh :diffget //3
+    nmap <leader>gf :diffget //2
+  endfunction
 
-  let g:deoplete#sources#go#gocode_binary = '~/go/bin/gocode'
-
-
+function! myspacevim#after() abort
+    " you can remove key binding in bootstrap_after function
+    " iunmap kj
 endfunction
 
