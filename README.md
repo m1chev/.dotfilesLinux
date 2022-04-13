@@ -39,6 +39,6 @@
   ```
   To unstow - delete symlinks and return the files:
   ```
-  stow --adopt -vDt ~ */
+  stow -vDt ~ */
   ```
 

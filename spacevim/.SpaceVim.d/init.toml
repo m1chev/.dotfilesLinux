@@ -19,8 +19,7 @@
     snippet_engine = "neosnippet"
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "slant"
-    statusline_iseparator = "slant"
+    statusline_separator = "arrow"
     statusline_unicode = true
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
