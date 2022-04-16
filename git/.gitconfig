@@ -16,11 +16,25 @@
 [init]
 	defaultBranch = main
 
+[diff]
+    tool = vimdiff
+
+[difftool]
+    prompt = false
+
+[merge]
+    tool = vimdiff
+
+# To remove sensitive information
+# git filter-branch --index-filter 'git rm --cached --ignore-unmatch devRun.sh' HEAD
+# git push --force
+
 [alias]
 	unstage = reset HEAD --
 	last = log -1 HEAD
 
   # branch
+  s  = status
   b  = branch
   bc = checkout -b
 
