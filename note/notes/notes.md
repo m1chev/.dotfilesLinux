@@ -14,3 +14,5 @@ Payments:
 1. Show Trail - the button Change should be presented - button named Upgrade.
   https://code.vereign.com/seal/clients/user-payments/-/issues/1
 2. There are different favicons for
+
+

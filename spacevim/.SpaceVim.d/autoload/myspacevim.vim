@@ -7,6 +7,9 @@ function! myspacevim#before() abort
 
     nmap <leader>gh :diffget //3
     nmap <leader>gf :diffget //2
+
+    nmap <C-l> :bnext<CR>
+    nmap <C-h> :bprev<CR>
   endfunction
 
 function! myspacevim#after() abort
