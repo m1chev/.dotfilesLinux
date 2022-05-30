@@ -15,4 +15,15 @@ Payments:
   https://code.vereign.com/seal/clients/user-payments/-/issues/1
 2. There are different favicons for
 
+## PCM Wallet:
+* To create a wallet must have an email
+* No option to create connection
+* No accessibility features
+* Otp Verify
+  * Don't have back to change the email
+  * Doesn't show you the email to which the code was sent
+  * The Email with the code goes in the junk mail
+* Recover Wallet:
+  * setting pin and restore wallet are options on the same screen, it is not clear that first pin should be set then the restoring can take place
+
 

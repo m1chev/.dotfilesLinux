@@ -33,6 +33,7 @@ unset rc
 
 # Set Env Variables
 export GOPATH=$HOME/go
+export GO111MODULE=on
 export JAVA_HOME=$HOME/jdk/jdk-17.0.2
 export GOPRIVATE="code.vereign.com"
 export EDITOR='nvim'

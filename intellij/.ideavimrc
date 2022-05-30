@@ -74,5 +74,7 @@ nmap <leader>gd <Action>(GotoDeclaration)
 nmap <leader>u <Action>(FindUsages)
 nmap <leader>sa <Action>(ShowIntentionActions)
 
+" comment line - C-/
+
 "Format code
 nmap <leader>f <Action>(ReformatCode)
