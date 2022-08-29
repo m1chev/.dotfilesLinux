@@ -8,6 +8,7 @@ set scrolloff=3
 
 " Do incremental searching.
 set incsearch
+set hlsearch
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
@@ -29,6 +30,8 @@ map Q gq
 "_______________________________________________________"
 " Resources:
 " https://github.com/JetBrains/ideavim
+" To find an action and create a shortcut
+" Ctr+Shift+A -> search for 'track' -> turn it on
 
 let mapleader=" "
 inoremap jk <esc>
@@ -39,11 +42,13 @@ nmap <leader>vi <Action>(VimPluginToggle)
 """ Plugins  --------------------------------
 set surround            " https://github.com/tpope/vim-surround
 set commentary          " https://github.com/tpope/vim-commentary
+"Plug 'jiangmiao/auto-pairs'
 
 set hlsearch            " highlight search terms
 set incsearch           " show search matches as you type
 set ideajoin            " https://github.com/JetBrains/ideavim/blob/master/doc/ideajoin-examples.md
 set ideastatusicon=gray " changes IdeaVim icon's color to gray
+
 
 " Closing Tabs
 nmap <C-w> <Action>(CloseContent)
@@ -53,6 +58,9 @@ nmap <leader>bd <Action>(CloseContent)
 " Switch Tabs
 map <leader>bn <Action>(NextTab)
 map <leader>bp <Action>(PreviousTab)
+map <C-l> <Action>(NextTab)
+map <C-h> <Action>(PreviousTab)
+"ToggleFullScreen
 
 " To navigate between split panes
 nmap <leader>wn <Action>(NextSplitter)
@@ -61,7 +69,15 @@ nmap <leader>ws <Action>(SplitVertically)
 " nmap <leader>ws:action SplitHorizontally<cr>
 nmap <leader>wc <Action>(Unsplit)
 nmap <leader>' <Action>(ActivateTerminalToolWindow)
+nmap <leader>; <Action>(ActivateRunToolWindow)
+nmap <leader>gv <Action>(ActivateVersionControlToolWindow)
+nmap <leader>cr <Action>(editRunConfigurations)
 nmap <leader>r <Action>(Run)
+nmap <leader>gi <Action>(Generate)
+nmap ft <Action>(ActivateProjectToolWindow)
+nmap <C-p> <Action>(GotoFile)
+" S-Esc to HideActiveWindow
+" nmap <C-h> <Action>(HideActiveWindow)
 
 " Increase or decrease font size
 nnoremap <C-=> <Action>(EditorIncreaseFontSize)
@@ -78,3 +94,10 @@ nmap <leader>sa <Action>(ShowIntentionActions)
 
 "Format code
 nmap <leader>f <Action>(ReformatCode)
+
+"Search
+:set ignorecase
+:set smartcase
+
+"Copy
+map <C-c> "+y

@@ -38,3 +38,4 @@ export JAVA_HOME=$HOME/jdk/jdk-17.0.2
 export GOPRIVATE="code.vereign.com"
 export EDITOR='nvim'
 export VISUAL='nvim'
+. "$HOME/.cargo/env"

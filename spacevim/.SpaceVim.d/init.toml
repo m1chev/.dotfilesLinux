@@ -85,6 +85,17 @@
 [[layers]]
   name = "denite"
 
+[[layers]]
+  name = "lang#rust"
+
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    "rust"
+  ]
+  [layers.override_cmd]
+    rust = ["rls"]
+
 [[custom_plugins]]
     name = "ryanoasis/vim-devicons"
     merged = false
@@ -97,7 +108,8 @@
 # [[custom_plugins]]
     # repo = "https://github.com/avanzzzi/behave.vim.git"
     # merged = false
-#
+
+# vim-cucumber - not working properly
 # [[custom_plugins]]
     # repo = "https://github.com/tpope/vim-cucumber.git"
     # merged = false
