@@ -100,4 +100,8 @@ nmap <leader>f <Action>(ReformatCode)
 :set smartcase
 
 "Copy
-map <C-c> "+y
+map <leader>y "+y
+
+"Move lines of code visually
+vnoremap J :m'>+1<CR>gv=gv
+vnoremap K :m'>-2<CR>gv=gv
