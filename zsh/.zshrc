@@ -12,6 +12,8 @@ setopt HIST_IGNORE_ALL_DUPS  # do not put duplicated command into history list
 setopt HIST_SAVE_NO_DUPS  # do not save duplicated command
 setopt HIST_REDUCE_BLANKS  # remove unnecessary blanks
 setopt INC_APPEND_HISTORY_TIME  # append command to history file immediately after execution
+setopt SHARE_HISTORY # Share history between all sessions.
+setopt HIST_IGNORE_SPACE # Don't record an entry starting with a space.
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -30,7 +32,7 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
-bindkey -s '^r' "~/.local/bin/tmux-sessionizer\n"
+bindkey -s '^g' "~/.local/bin/tmux-sessionizer.sh\n"
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
