@@ -62,7 +62,7 @@ bindkey '^e' edit-command-line
 bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
-. ~/.config/z.sh
+. ~/.dotfilesLinux/z/z.sh
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.bash_aliases" ] && source "$HOME/.bash_aliases"
