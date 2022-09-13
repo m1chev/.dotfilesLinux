@@ -1,4 +1,4 @@
-# Config for zsh shell
+
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -62,7 +62,7 @@ bindkey '^e' edit-command-line
 bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
-. ~/.dotfilesLinux/z/z.sh
+. ~/.config/z.sh
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.bash_aliases" ] && source "$HOME/.bash_aliases"
