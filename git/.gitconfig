@@ -1,12 +1,12 @@
-# [user]
-#   email = veselinov.michev@gmail.com
-#   name = m1chev
-#   signingKey = 5D5AD2DD87A2A3D2
-
 [user]
-  email = georgi.michev@vereign.com
-  name = georgi.michev
+  email = veselinov.michev@gmail.com
+  name = m1chev
   signingKey = 5D5AD2DD87A2A3D2
+
+; [user]
+;   email = georgi.michev@vereign.com
+;   name = georgi.michev
+;   signingKey = 5D5AD2DD87A2A3D2
 [commit]
 	gpgSign = true
 
