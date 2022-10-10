@@ -4,8 +4,9 @@
 # Import color scheme first:
 # git clone https://github.com/eendroroy/alacritty-theme.git ~/.alacritty-colorscheme
 # Other top options: {gruvbox_dark}
+# Other top options: {tokyo-night.yaml}
 import:
-  - ~/.alacritty-colorscheme/themes/tokyo-night.yaml
+  - ~/.alacritty-colorscheme/themes/gruvbox_dark
 # ________________________________________________________________
 
 # Import additional configuration files
