@@ -19,9 +19,6 @@ alias ping='ping -c 5'
 # Useful commands
 # alias bc='bc -l' # calculator
 
-# Start jMeter
-alias jmeter='cd ~/jMeter/bin/ && ./jmeter'
-
 # Local IP
 alias localip="hostname -I | awk '{print $1}'"
 
@@ -54,6 +51,6 @@ function dockershhere() {
 }
 
 alias dockerc='docker-compose'
-alias jmeter='/home/michev/jdk/jmeter-5.4.3/bin/jmeter'
+alias jmeter='/home/michev/.jdks/jMeter/bin/jmeter'
 alias ..='cd ..'
 alias ...='cd ../../'
