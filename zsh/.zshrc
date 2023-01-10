@@ -9,6 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+# ZSH_THEME="kardan"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,6 +74,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   zsh-syntax-highlighting
+  emotty
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -121,7 +123,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)		# Include hidden files.
+# _comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
 bindkey -v
@@ -133,7 +135,7 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
-bindkey -s '^g' "~/.local/bin/tmux-sessionizer.sh\n"
+bindkey -s '^w' "~/.local/bin/tmux-sessionizer.sh\n"
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
@@ -155,8 +157,20 @@ bindkey '^f' autosuggest-accept
 # Set Env Variables
 export GOPATH=$HOME/go
 export GO111MODULE=on
-export JAVA_HOME=$HOME/jdk/jdk-17.0.2
+export JAVA_HOME=$HOME/.jdks/openjdk-19.0.1
 export GOPRIVATE="code.vereign.com"
 export EDITOR='nvim'
 export VISUAL='nvim'
 . "$HOME/.cargo/env"
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+
+if ! [[ "$PATH" =~ "$HOME/go/bin:" ]]
+then
+  PATH="$HOME/go/bin:$PATH"
+fi
+export PATH
