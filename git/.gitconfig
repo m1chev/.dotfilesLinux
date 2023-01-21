@@ -1,29 +1,31 @@
 [user]
-	email = georgi.michev@vereign.com
-	name = michev
-	signingkey = georgi.michev@vereign.com
+  email = veselinov.michev@gmail.com
+  name = michev
+  signingKey = 87A2A3D2
 
-; [user]
-;   email = georgi.michev@vereign.com
-;   name = georgi.michev
-;   signingKey = 5D5AD2DD87A2A3D2
+[includeIf "gitdir:~/go/src/code.vereign.com/"]
+	path = ~/.work.gitconfig
+
+[includeIf "gitdir:~/go/src/gitlab.com/gaia-x/"]
+	path = ~/.work.gitconfig
+
 [commit]
 	gpgSign = true
 
 [url "ssh://git@code.vereign.com:"]
-  insteadOf = https://code.vereign.com
+	insteadOf = https://code.vereign.com
 
 [init]
 	defaultBranch = main
 
 [diff]
-    tool = vimdiff
+	tool = vimdiff
 
 [difftool]
-    prompt = false
+	prompt = false
 
 [merge]
-    tool = vimdiff
+	tool = vimdiff
 
 # To remove sensitive information
 # git filter-branch --index-filter 'git rm --cached --ignore-unmatch devRun.sh' HEAD
