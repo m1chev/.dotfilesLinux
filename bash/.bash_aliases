@@ -32,11 +32,7 @@ alias globalip='curl ipconfig.io'
 ## second is for starting container
 # docker container run -it --interactive --name kali kalilinux/kali-rolling /bin/bash
 # alias kali='docker container start -ai kali'
-
-## Debian linux
-# docker container run -it --interactive --name debian debian /bin/bash
-# alias debian='docker container start -ai debian'
-alias ubuntu='docker container start -ai ubuntu'
+alias archlinux='docker container start -ai archlinux'
 
 ### Docker
 ### example - `dockershellhere ubuntu`
@@ -54,3 +50,5 @@ alias dockerc='docker-compose'
 alias jmeter='/home/michev/.jdks/jMeter/bin/jmeter'
 alias ..='cd ..'
 alias ...='cd ../../'
+
+alias open="xdg-open"
