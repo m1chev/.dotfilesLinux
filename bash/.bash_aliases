@@ -46,9 +46,18 @@ function dockershhere() {
     docker run --rm -it --entrypoint=/bin/sh -v `pwd`:/${dirname} -w /${dirname} "$@"
 }
 
+# Decode JWT
+jwtd() {
+    if [[ -x $(command -v jq) ]]; then
+         jq -R 'split(".") | .[0],.[1] | @base64d | fromjson' <<< "${1}"
+         echo "Signature: $(echo "${1}" | awk -F'.' '{print $3}')"
+    fi
+}
+
 alias dockerc='docker-compose'
 alias jmeter='/home/michev/.jdks/jMeter/bin/jmeter'
 alias ..='cd ..'
 alias ...='cd ../../'
 
 alias open="xdg-open"
+alias vimg='vim -c "G | only"'

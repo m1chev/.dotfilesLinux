@@ -174,3 +174,5 @@ then
   PATH="$HOME/go/bin:$PATH"
 fi
 export PATH
+
+source <(kubectl completion zsh)
