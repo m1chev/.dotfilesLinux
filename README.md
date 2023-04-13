@@ -9,6 +9,7 @@
 - spacevim
 - vim
 - nvim
+- zsh
 
 ## Setup
 
@@ -32,23 +33,17 @@ For more details about the commands use man:
 man stow
 ```
 
-To initially move and create symlinks from the target files/directories
-first run and check the output from this command:
+The 'n' parameter is used for dry run, remove it if happy with the result.
+
+
+To stow - apply the files (create symlinks in target from this repository): 
 
 ```
-stow --adopt -nvt ~ */
+stow -nvt ~ zsh
 ```
-
-Then remove the 'n' option if you are happy with the result:
-
+or for ALL - not recommended
 ```
-stow --adopt -vt ~ */
-```
-
-To stow - create symlinks using
-
-```
-stow -vt ~ */
+stow -nvt ~ */
 ```
 
 To unstow - delete symlinks and return the files:
@@ -56,3 +51,20 @@ To unstow - delete symlinks and return the files:
 ```
 stow -vDt ~ */
 ```
+## Add files to the repository
+
+To initially move and create symlinks from the target files/directories
+first run and check the output from this command:
+
+```
+stow --adopt -nvt ~ */
+```
+
+### Stow ZSH
+
+There are some preparation needed before applying the configuration files.  
+Steps:
+1. Install ZSH [oh-my-zsh](https://ohmyz.sh/#install)  
+```sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
+2. Clone and install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+3. Clone and install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
