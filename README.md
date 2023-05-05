@@ -82,6 +82,7 @@ Restore keys from file:
 gpg --import backup
 ```  
 Using ansible-vault to encrypt the file for better security:  
+_$ANSIBLE_VAULT;1.1;AES256_  
 ```
 ansible-vault encrypt backup
 ...
