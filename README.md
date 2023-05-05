@@ -68,3 +68,22 @@ Steps:
 ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
 2. Clone and install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 3. Clone and install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+## Commands to manage gpg keys
+
+Use ```man gpg``` for convenience.  
+
+Backup keys:  
+```
+gpg --export-secret-keys --output backup
+```  
+Restore keys from file:
+```
+gpg --import backup
+```  
+Using ansible-vault to encrypt the file for better security:  
+```
+ansible-vault encrypt backup
+...
+ansible-vault decrypt backup
+```
