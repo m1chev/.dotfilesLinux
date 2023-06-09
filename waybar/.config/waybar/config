@@ -4,10 +4,10 @@
     "position": "top",
 
     // If height property would be not present, it'd be calculated dynamically
-    "height": 30,
+    "height": 10,
 
     "modules-left": [
-        "custom/launcher",
+        //"custom/launcher",
         "sway/workspaces",
         "sway/mode",
     ],
@@ -17,30 +17,21 @@
 
     "modules-right": [
         "network",
-        "idle_inhibitor",
         "memory",
         "cpu",
-        "pulseaudio",
-        //"custom/keyboard-layout",
+        "//pulseaudio",
+        "custom/keyboard-layout",
         "battery",
         //"custom/PBPbattery",
         "backlight#icon",
         "backlight#value",
-        "clock",
         "tray",
         "custom/weather",
-        "custom/power",
+        //"custom/power",
+        "clock",
     ],
 
     // Modules
-
-    "idle_inhibitor": {
-        "format": "{icon} ",
-        "format-icons":{
-            "activated": "",
-            "deactivated": ""
-        }
-    },
 
     "battery": {
         "states": {
@@ -49,7 +40,7 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -64,7 +55,7 @@
     "clock": {
         "interval": 10,
         "format-alt": " {:%e %b %Y}", // Icon: calendar-alt
-        "format": "{:%H:%M}",
+        "format": "{:%H:%M%p}",
         "tooltip-format": "{:%e %B %Y}"
     },
 
@@ -75,11 +66,12 @@
             "warning": 70,
             "critical": 90,
         },
-        "on-click": "xfce4-terminal -e 'htop'",
+        "on-click": "gnome-terminal -e 'htop'",
     },
 
     "custom/keyboard-layout": {
-        "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+        //"exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+        "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | awk '{print $2};' | cut -c 2-",
         // Interval set only as a fallback, as the value is updated by signal
         "interval": 2,
         "format": "  {}", // Icon: keyboard
@@ -91,8 +83,8 @@
 
     "memory": {
         "interval": 5,
-        "format": " {}%", // Icon: memory
-        "on-click": "xfce4-terminal -e 'htop'", 
+        "format": " {}%", // Icon: memory
+        "on-click": "gnome-terminal -e 'htop'", 
         "states": {
             "warning": 70,
             "critical": 90
@@ -105,7 +97,7 @@
         "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "xfce4-terminal -e 'nmtui'",
+        "on-click": "gnome-terminal -e 'nmtui'",
     },
     "network#vpn": {
         "interface": "tun0",
@@ -133,31 +125,15 @@
         "format-icons": {
             "1": "",
             "2": "",
-            "3": "",
+            "3": "",
             "4": "",
+            "5": "",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "0",
         }
-    },
-
-    "pulseaudio": {
-        "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}  {format_source}",
-        "format-bluetooth-muted": " {icon}  {format_source}",
-        "format-muted": "婢 {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "וֹ",
-            "headset": "  ",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": [""]
-        },
-        "on-click": "pavucontrol",
-        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
-        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%",
     },
 
     // to use the weather module replace <your_location> with your city or town
@@ -206,13 +182,13 @@
 
     "custom/launcher": {
         "format":" ",
-        "on-click": "exec wofi -c ~/.config/wofi/config -I",
+        "on-click": "dmenu_path | dmenu | xargs swaymsg exec --",
         "tooltip": false,
     },
 
-    "custom/power": {
-        "format":"⏻",
-        "on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
-        "tooltip": false,
-    },
+//    "custom/power": {
+//        "format":"⏻",
+//        "on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
+//        "tooltip": false,
+//    },
 }
