@@ -61,3 +61,4 @@ alias ...='cd ../../'
 
 alias open="xdg-open"
 alias vimg='vim -c "G | only"'
+alias gitlogin='eval "$(ssh-agent -s)" > /dev/null && ssh-add ~/.ssh/gitlab 2> /dev/null'

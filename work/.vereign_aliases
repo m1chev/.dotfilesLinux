@@ -37,4 +37,4 @@ alias vtoken="\
     --data '{ \"email\": \"georgi.michev@vereign.com\" }'\
     | jq
   "
-
+alias vpnv='nmcli --ask connection up vereign'
