@@ -108,8 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # ___________________________________________________________
 
 # History in cache directory:
-export HISTSIZE=1000
-export SAVEHIST=1000
+export HISTSIZE=10000
+export SAVEHIST=10000
 export HISTFILE=~/.config/.zsh_history
 setopt HIST_IGNORE_ALL_DUPS  # do not put duplicated command into history list
 setopt HIST_SAVE_NO_DUPS  # do not save duplicated command
@@ -143,6 +143,8 @@ bindkey '^e' edit-command-line
 
 bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
+
+bindkey -s '^S' 'history | fzf^M'
 
 . ~/.config/z.sh
 
