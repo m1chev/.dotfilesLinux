@@ -6,6 +6,11 @@ source ~/.vereign_aliases
 # Get week number
 alias week='date +%V'
 
+# iPhone Mount
+# sudo dnf install libimobiledevice ifuse usbmuxd
+# mkdir ~/iPhone
+alias iphone='ifuse ~/iPhone'
+
 # Show hidden files
 alias l='ls -lh'
 alias ll='ls -lahv --ignore={.,..}'

@@ -9,6 +9,9 @@
 [includeIf "gitdir:~/go/src/gitlab.com/gaia-x/"]
 	path = ~/.work.gitconfig
 
+[includeIf "gitdir:~/go/src/gitlab.eclipse.org/"]
+	path = ~/.eclipse.gitconfig
+
 [commit]
 	gpgSign = true
 
