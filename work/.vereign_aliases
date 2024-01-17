@@ -22,7 +22,7 @@ vpn () {
   fi
 
   sudo chattr -i /etc/resolv.conf
-  printf "${skip}nameserver 10.6.16.100\nnameserver 1.1.1.1" | sudo tee /etc/resolv.conf
+  printf "${skip}nameserver 10.6.16.101\nnameserver 1.1.1.1" | sudo tee /etc/resolv.conf
   sudo chattr +i /etc/resolv.conf
   nmcli con ${be} vereign
 }
