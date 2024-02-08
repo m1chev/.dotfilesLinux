@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-08T06:57:14.955Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="sRF-IbGwqecJL_4nFzBv" version="23.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-08T07:07:19.236Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="LXs3OVkjxbzjyoAYQo-b" version="23.1.2" type="github">
   <diagram name="Page-1" id="efa7a0a1-bf9b-a30e-e6df-94a7791c09e9">
     <mxGraphModel dx="891" dy="502" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -25,8 +25,26 @@
         <mxCell id="hZL0gsx_3VJ-x4WJlqoH-119" value="&lt;p align=&quot;center&quot; style=&quot;margin: 4px 0px 0px; text-decoration: underline;&quot;&gt;&lt;strong&gt;Face Doc&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;&lt;hr align=&quot;left&quot;&gt;&lt;p align=&quot;left&quot; style=&quot;margin: 0px; margin-left: 8px;&quot;&gt;current doc: &lt;b&gt;ipfs_cid&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;left&quot; style=&quot;margin: 0px; margin-left: 8px;&quot;&gt;genesis doc:&amp;nbsp; &lt;b&gt;ipfs_cid&lt;/b&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#D4E1F5;strokeColor=#003366;fontColor=#003366;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="575" y="250" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="hZL0gsx_3VJ-x4WJlqoH-122" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;did:duo:genesisDocCID:faceDocCID&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="50" y="280" width="330" height="30" as="geometry" />
+        <mxCell id="hZL0gsx_3VJ-x4WJlqoH-124" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hZL0gsx_3VJ-x4WJlqoH-122" target="hZL0gsx_3VJ-x4WJlqoH-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hZL0gsx_3VJ-x4WJlqoH-128" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hZL0gsx_3VJ-x4WJlqoH-122" target="hZL0gsx_3VJ-x4WJlqoH-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hZL0gsx_3VJ-x4WJlqoH-122" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;did:duo:&lt;span data-darkreader-inline-bgcolor=&quot;&quot; style=&quot;background-color: rgb(0, 204, 0); --darkreader-inline-bgcolor: #00a300;&quot;&gt;genesisDocCID&lt;/span&gt;:&lt;span data-darkreader-inline-bgcolor=&quot;&quot; style=&quot;background-color: rgb(181, 115, 157); --darkreader-inline-bgcolor: #753e61;&quot;&gt;faceDocCID&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="40" y="368" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hZL0gsx_3VJ-x4WJlqoH-132" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hZL0gsx_3VJ-x4WJlqoH-123" target="hZL0gsx_3VJ-x4WJlqoH-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hZL0gsx_3VJ-x4WJlqoH-123" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;faceDocCID&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;labelBackgroundColor=#B5739D;" vertex="1" parent="1">
+          <mxGeometry x="410" y="280" width="117" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hZL0gsx_3VJ-x4WJlqoH-131" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hZL0gsx_3VJ-x4WJlqoH-127" target="25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hZL0gsx_3VJ-x4WJlqoH-127" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;span data-darkreader-inline-bgcolor=&quot;&quot; style=&quot;background-color: rgb(0, 204, 0); --darkreader-inline-bgcolor: #00a300;&quot;&gt;genesisDocCID&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="54" y="241" width="132" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
