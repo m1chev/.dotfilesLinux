@@ -154,7 +154,7 @@ bindkey -s '^S' 'history | fzf^M'
 # Load zsh-autosuggestions
 # git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^f' autosuggest-accept
+bindkey '^y' autosuggest-accept
 
 # Set Env Variables
 export GOPATH=$HOME/go
@@ -183,3 +183,7 @@ fi
 export PATH
 
 source <(kubectl completion zsh)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

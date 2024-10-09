@@ -59,7 +59,7 @@ jwtd() {
     fi
 }
 
-alias dockerc='docker-compose'
+alias dockerc='docker compose'
 alias jmeter='/home/michev/.jdks/jMeter/bin/jmeter'
 alias ..='cd ..'
 alias ...='cd ../../'
@@ -67,3 +67,5 @@ alias ...='cd ../../'
 alias open="xdg-open"
 alias vimg='vim -c "G | only"'
 alias gitlogin='eval "$(ssh-agent -s)" > /dev/null && ssh-add ~/.ssh/gitlab 2> /dev/null'
+
+alias mikrotik='ssh admin@192.168.1.2'
