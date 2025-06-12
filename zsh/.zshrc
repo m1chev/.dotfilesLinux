@@ -160,7 +160,7 @@ bindkey '^y' autosuggest-accept
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export GO111MODULE=on
-export JAVA_HOME=$HOME/.jdks/openjdk-19.0.1
+# export JAVA_HOME=$HOME/.jdks/openjdk-19.0.1
 export GOPRIVATE="code.vereign.com"
 export EDITOR='nvim'
 export VISUAL='nvim'
@@ -187,3 +187,9 @@ source <(kubectl completion zsh)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(direnv hook zsh)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

@@ -1,5 +1,4 @@
-
-[terminal.shell]
+[shell]
 args = ["-l", "-c", "tmux attach || tmux"]
 program = "/bin/zsh"
 
@@ -10,5 +9,3 @@ opacity = 0.8
 
 [general]
 import = ["/home/michev/.alacritty-colorscheme/themes/gruvbox_dark"]
-
-[terminal]
